@@ -25,19 +25,7 @@
 
         // To be continued in upcoming steps.
         const scene = new THREE.Scene();
-
-        const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-        const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-        const cube = new THREE.Mesh( geometry, material );
-        cube.position.set(1, 1, 1);
-        scene.add( cube );
-
-
-        function animate() {
-            requestAnimationFrame( animate );
-            renderer.render( scene, camera );
-        }
-        animate();
+        
 
         // Set up the WebGLRenderer, which handles rendering to the session's base layer.
         const renderer = new THREE.WebGLRenderer({
