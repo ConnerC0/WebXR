@@ -15,8 +15,6 @@
     We start this one with a simple button. -->
 <button onclick="activateXR()">Start Hello WebXR</button>
 <script>
-    import THREE from "three";
-
     async function activateXR() {
         // Add a canvas element and initialize a WebGL context that is compatible with WebXR.
         const canvas = document.createElement("canvas");
@@ -25,7 +23,6 @@
 
         // To be continued in upcoming steps.
         const scene = new THREE.Scene();
-        
 
         // Set up the WebGLRenderer, which handles rendering to the session's base layer.
         const renderer = new THREE.WebGLRenderer({
@@ -80,7 +77,6 @@
             }
         }
         session.requestAnimationFrame(onXRFrame);
-
     }
 </script>
 </body>
